@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração — Cadastro de filmes</title>
+</head>
+<body>
+
+    <header>
+        <h1>Administração — Catálogo de Filmes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro-filmes.html">Cadastro de filmes</a></li>
+            <li><a href="cadastro-usuarios.html">Cadastro de usuários</a></li>
+            <li><a href="index.html">Início</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Cadastro de filmes</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </p>
+                <p>
+                    <label for="ano">Ano de lançamento:</label>
+                    <input type="number" id="ano" name="ano" min="1900" max="2100" required>
+                </p>
+                <p>
+                    <label for="direcao">Direção:</label>
+                    <input type="text" id="direcao" name="direcao" required>
+                </p>
+                <p>
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" name="genero" required>
+                </p>
+                <p>
+                    <label for="duracao">Duração (minutos):</label>
+                    <input type="number" id="duracao" name="duracao" min="1" required>
+                </p>
+                <p>
+                    <label for="classificacao">Classificação indicativa:</label>
+                    <select id="classificacao" name="classificacao">
+                        <option value="livre">Livre</option>
+                        <option value="10">10 anos</option>
+                        <option value="12">12 anos</option>
+                        <option value="14">14 anos</option>
+                        <option value="16">16 anos</option>
+                        <option value="18">18 anos</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="elenco">Elenco:</label>
+                    <input type="text" id="elenco" name="elenco">
+                </p>
+                <p>
+                    <label for="nota">Nota:</label>
+                    <input type="number" id="nota" name="nota" min="0" max="10" step="0.1">
+                </p>
+                <p>
+                    <label for="sinopse">Sinopse:</label><br>
+                    <textarea id="sinopse" name="sinopse" rows="5" cols="50"></textarea>
+                </p>
+                <p>
+                    <label for="imagem">Imagem (pôster):</label>
+                    <input type="file" id="imagem" name="imagem" accept="image/*">
+                </p>
+                <p>
+                    <button type="submit">Salvar</button>
+                    <button type="reset">Limpar</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Filmes cadastrados</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Ano</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Interestelar</td>
+                        <td>2014</td>
+                        <td>Ficção científica</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>O Rei Leão</td>
+                        <td>1994</td>
+                        <td>Animação</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Matrix</td>
+                        <td>1999</td>
+                        <td>Ficção científica</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Criado por Enzo Capistrano</p>
+        <p><a href="sobre.html">Sobre o autor</a></p>
+    </footer>
+
+</body>
+</html>
